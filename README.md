@@ -1,6 +1,6 @@
 # Forthwith CLI Releases
 
-This repository hosts the official release binaries for the Forthwith CLI.
+This repository hosts the official release binaries for the [Forthwith CLI](https://forthwith.dev).
 
 Forthwith CLI extracts localizable strings from your project, sends new or changed strings to Forthwith for translation, and writes translated resources back into framework-specific files.
 
@@ -68,7 +68,7 @@ forthwith init
 forthwith translate
 ```
 
-See the full documentation for complete usage instructions.
+See the [Forthwith CLI documentation](https://forthwith.dev/docs) for complete usage instructions.
 
 
 
