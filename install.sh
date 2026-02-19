@@ -68,7 +68,7 @@ get_latest_version() {
 verify_checksum() {
     dir="$1"
     file="$2"
-    expected="$(grep "$file" "$dir/checksums.txt" | awk '{print $1}')"
+    expected="$(awk -v f="$file" '$2 == f || $2 == "*" f { print $1; exit }' "$dir/checksums.txt")"
 
     if [ -z "$expected" ]; then
         echo "Error: checksum not found for $file" >&2
@@ -80,8 +80,8 @@ verify_checksum() {
     elif command -v shasum >/dev/null 2>&1; then
         actual="$(shasum -a 256 "$dir/$file" | awk '{print $1}')"
     else
-        echo "Warning: no sha256 tool found, skipping checksum verification" >&2
-        return
+        echo "Error: no sha256 tool found (need sha256sum or shasum)" >&2
+        exit 1
     fi
 
     if [ "$expected" != "$actual" ]; then

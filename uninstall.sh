@@ -12,7 +12,9 @@ main() {
     fi
 
     printf "Remove %s from %s? [y/N] " "$BINARY_NAME" "$INSTALL_DIR"
-    read -r answer
+    if ! read -r answer; then
+        answer=""
+    fi
     case "$answer" in
         [Yy]|[Yy][Ee][Ss])
             remove_binary
