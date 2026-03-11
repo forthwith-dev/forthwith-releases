@@ -13,20 +13,20 @@ You need a Forthwith account to use this CLI. [Sign up at forthwith.dev](https:/
 ### macOS / Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/forthwith-dev/forthwith-releases/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Forthwith-LLC/forthwith-releases/main/install.sh | bash
 ```
 
 ### macOS (Homebrew)
 
 ```bash
-brew tap forthwith-dev/forthwith
+brew tap Forthwith-LLC/forthwith
 brew install forthwith
 ```
 
 ### Windows (Scoop)
 
 ```bash
-scoop bucket add forthwith https://github.com/forthwith-dev/scoop-forthwith
+scoop bucket add forthwith https://github.com/Forthwith-LLC/scoop-forthwith
 scoop install forthwith
 ```
 
@@ -52,7 +52,7 @@ Download the binary for your platform from the Releases page.
 ### macOS / Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/forthwith-dev/forthwith-releases/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Forthwith-LLC/forthwith-releases/main/uninstall.sh | bash
 ```
 
 ## Getting Started

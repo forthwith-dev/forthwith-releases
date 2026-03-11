@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-REPO="forthwith-dev/forthwith-releases"
+REPO="Forthwith-LLC/forthwith-releases"
 BINARY_NAME="forthwith"
 INSTALL_DIR="${FORTHWITH_INSTALL_DIR:-/usr/local/bin}"
 
